@@ -1,0 +1,84 @@
+:root {
+  --primary: #ff6b6b;
+  --secondary: #ffd166;
+  --accent: #4ecdc4;
+  --bg: linear-gradient(135deg, #fff7d6 0%, #ffe7f0 50%, #e8faff 100%);
+  --card: #ffffff;
+  --text: #3a2c5a;
+  --border: #f2c6d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', 'Trebuchet MS', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(90deg, var(--primary), #ff8fab);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+main {
+  padding: 2rem;
+}
+
+.hero,
+.card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 24px rgba(255, 107, 107, 0.15);
+  border: 3px solid var(--border);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.button,
+button {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), #4aa8ff);
+  color: white;
+  border: none;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 6px 14px rgba(78, 205, 196, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover,
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(78, 205, 196, 0.3);
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  margin: 0.75rem 0;
+  border: 2px solid var(--border);
+  border-radius: 999px;
+  font-size: 1rem;
+}

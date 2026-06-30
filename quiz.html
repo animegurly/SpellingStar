@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz | Spelling Site</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/quiz.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Spelling Site</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="wordhunt.html">Word Hunt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card quiz-card">
+        <h2>Spelling Quiz</h2>
+        <div class="difficulty-buttons">
+          <button class="mode-button" data-mode="easy">Easy</button>
+          <button class="mode-button" data-mode="medium">Medium</button>
+          <button class="mode-button" data-mode="hard">Hard</button>
+          <button class="mode-button" data-mode="surprise">Surprise Me</button>
+        </div>
+        <p id="question-text">Loading question...</p>
+        <button id="speak-word" class="secondary-button">Hear the word</button>
+        <input id="answer-input" type="text" placeholder="Type the spelling" />
+        <button id="submit-answer">Check Answer</button>
+        <p id="feedback"></p>
+        <div id="hangman" class="hangman" aria-label="Hangman progress">🪵</div>
+        <div id="score-tracker" class="score-tracker" aria-live="polite">
+          <div class="score-group">
+            <span class="score-label">Correct</span>
+            <span id="correct-count" class="score-count">0</span>
+            <span id="correct-faces" class="faces"></span>
+          </div>
+          <div class="score-group">
+            <span class="score-label">Wrong</span>
+            <span id="wrong-count" class="score-count">0</span>
+            <span id="wrong-faces" class="faces"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/quiz.js"></script>
+  </body>
+</html>

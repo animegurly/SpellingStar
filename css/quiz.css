@@ -1,0 +1,140 @@
+.quiz-card {
+  text-align: center;
+}
+
+.difficulty-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.mode-button {
+  background: linear-gradient(135deg, #ffd166, #ff9f1c);
+  color: #4a2c00;
+  margin: 0;
+}
+
+.mode-button.active {
+  background: linear-gradient(135deg, #ff6b6b, #ff3d7a);
+  color: white;
+}
+
+.secondary-button {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  margin-bottom: 1rem;
+}
+
+.score-tracker {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #f2c6d8;
+}
+
+.score-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #fff8dc;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+}
+
+.score-label {
+  font-weight: 700;
+}
+
+.score-count {
+  font-weight: 800;
+  color: #ff6b6b;
+}
+
+.faces {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+.hangman {
+  font-size: 2rem;
+  margin: 1rem 0 0.5rem;
+  min-height: 2.5rem;
+}
+
+.flash-alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ff6b6b, #ff9f1c);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: pulse 0.8s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: translateX(-50%) scale(1); }
+  to { transform: translateX(-50%) scale(1.05); }
+}
+
+#feedback {
+  min-height: 1.5rem;
+  font-weight: 700;
+  color: #ff3d7a;
+}
+
+#word-list {
+  list-style: none;
+  padding: 0;
+}
+
+.word-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 0;
+  border-bottom: 2px dotted #f2c6d8;
+}
+
+.word-meta {
+  color: #7a6c93;
+  font-size: 0.9rem;
+}
+
+.speak-word-btn {
+  padding: 0.45rem 0.8rem;
+  font-size: 0.95rem;
+  border-radius: 999px;
+}
+
+.wordhunt-grid {
+  display: grid;
+  gap: 0.3rem;
+  justify-content: center;
+  margin: 1rem auto 1rem;
+}
+
+.wordhunt-row {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.wordhunt-cell {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #ffe7a8, #ffd166);
+  font-weight: 800;
+  color: #4a2c00;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
